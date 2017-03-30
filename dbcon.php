@@ -1,5 +1,6 @@
 <?php
-    $con=  mysqli_connect('localhost', 'id341146_saiprasad', 'Saiprasad1996', 'id341146_student');
+include('DBConfig.php');
+    $con=  mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
 	
     if(mysqli_connect_errno($con))
     {
