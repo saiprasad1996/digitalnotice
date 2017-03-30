@@ -1,0 +1,45 @@
+#sidebar-wrapper {
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 200%;
+    overflow-y: hidden;
+    background: #2D2D2D;
+    optacity: 0.9;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+/*change width of the side bar*/
+
+#wrapper.menuDisplayed #sidebar-wrapper {
+    width: 250px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper {
+    padding-left: 250px;
+}
+/*sidebar styling*/
+
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.sidebar-nav li a:hover {
+    background: #269abc;
+}
